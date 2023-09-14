@@ -11,6 +11,6 @@ namespace webapi.inlock.codeFirst.manha.Domains
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O titulo do tipo usuario é obrigatório")]
-        public string Titulo { get; set; }
+        public string? Titulo { get; set; }
     }
 }

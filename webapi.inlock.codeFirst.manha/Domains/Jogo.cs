@@ -15,11 +15,11 @@ namespace webapi.inlock.codeFirst.manha.Domains
 
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O nome do jogo é obrigatório")]
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
 
         [Column(TypeName = "TEXT")]
         [Required(ErrorMessage = "A descricao do jogo é obrigatório")]
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
 
         [Column(TypeName = "DATE")]
         [Required (ErrorMessage = "A data de lançamento é obrigatória")]
@@ -35,6 +35,6 @@ namespace webapi.inlock.codeFirst.manha.Domains
         public Guid IdEstudio { get; set; }
 
         [ForeignKey("IdEstudio")]
-        public Estudio Estudio { get; set; }
+        public Estudio? Estudio { get; set; }
     }
 }
